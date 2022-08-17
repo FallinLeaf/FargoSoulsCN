@@ -1,0 +1,4 @@
+displayName = Fargo魂石汉化补丁
+author = FallingLeaf落叶
+version = 0.1
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, lib\*, .git\*, *.sln
