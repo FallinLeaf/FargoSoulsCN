@@ -1,3 +1,4 @@
 Fargo魂石的汉化补丁
 Chinese Translation Patch for Fargo's Souls Mod
 持续更新中
+请开启中文，其他语言出现意料之外的现象概不负责
