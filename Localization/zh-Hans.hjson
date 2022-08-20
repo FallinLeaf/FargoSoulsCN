@@ -1103,10 +1103,6 @@ Mods: {
 			PatreonItem: ">> 捐赠者物品 <<"
 			PatreonNameEffect: 你的特殊捐赠者效果已激活！
 
-			SkeletronRegrow: "{$NPCName.SkeletronHead}的手臂又长出来了！"
-			SkeletronPrimeRegrow: "{$NPCName.SkeletronPrime}的手臂又长出来了！"
-			SkeletronGuardian: "{$NPCName.SkeletronHead}进入了地牢守卫阶段！"
-			SkeletronPrimeGuardian: "{$NPCName.SkeletronPrime}进入了地牢守卫阶段！"
 			TwinsEndure: 挺住了致命攻击，它还能帮着它的兄弟打三百回合！
 			TwinsRevive: 复活了！
 			GelatinSubjects: 圣凝史莱姆已苏醒！
@@ -1857,10 +1853,6 @@ Mods: {
 			WhipStack: 鞭子的增益/减益不能堆叠
 			MinionStack: 同时召唤超过3个相同召唤物时，它们的伤害会降低（超过12个后不再降低）
 			SummonMulticlass: 当你使用其他职业的武器攻击时，召唤伤害降低（在撒旦军队中除外）
-
-			ShadowDodge: 永恒模式：闪避会降低你的攻击速度
-			IceBarrier: 永恒模式：你造成的伤害减少10%
-			ManaSickness: 永恒模式：攻击速度减半
 		}
 
 		ItemName: {
