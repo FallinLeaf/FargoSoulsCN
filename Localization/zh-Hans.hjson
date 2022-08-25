@@ -2017,7 +2017,7 @@ Mods: {
 			
 			KamikazeSquirrelStaff: 神风松鼠杖
 			MountedAcornGun: 安装好的橡实枪
-			SnowballStaff: 雪球法杖
+			SnowballStaff: 雪球效应
 			TheLightningRod: 避雷针
 			TreeSword: 树剑
 
@@ -3337,6 +3337,7 @@ Mods: {
 			'''
 			MutantsCurse:
 			'''
+			必须在地表使用
 			“至少不需要用娃娃了”
 			'''
 			SigilOfChampions:
@@ -3349,6 +3350,10 @@ Mods: {
 			SquirrelCoatofArms:
 			'''
 			召唤无法平息的松鼠之怒！
+			'''
+			AbomsCurse:
+			'''
+			必须在地表使用
 			'''
 
 			// == Misc ==
