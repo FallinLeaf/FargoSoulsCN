@@ -1031,6 +1031,7 @@ Mods: {
 			MutantsCurse: "{$Mods.FargowiltasSouls.NPCName.MutantBoss}{$Mods.FargowiltasSouls.Message.HasAwoken}"
 			
 			AbominationnVoodooDoll: "突变体的兄弟死了，突变体被激怒了！"
+			AbominationnVoodooDollFail: "娃娃传送回了你的手中。也许不应该在地下使用它..."
 			
 			SigilOfChampions: {
 				Timber: 林叶沙沙，环绕四周……
