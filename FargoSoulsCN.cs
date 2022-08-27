@@ -5,8 +5,11 @@ namespace FargoSoulsCN
 {
 	public class FargoSoulsCN : Mod
 	{
-		public override void PostSetupContent()
+        /*public override void Load()
         {
         }
+        public override void Unload()
+        {
+        }*/
     }
 }

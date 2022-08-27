@@ -32,10 +32,11 @@ Mods: {
 
 			Eridanus:
 				'''
-				宇宙英灵的护佑增强了你的攻击
+				双击{0}键开关宇宙英灵的护佑并增强一个职业
 				每10秒切换增强的职业
 				当你使用对应职业的武器时，宇宙英灵会与你一同作战
-				对应职业武器增加75%伤害、30%攻击速度和20%暴击率
+				对应职业武器增加80%伤害、30%暴击率和30%攻击速度
+				当宇宙英灵的护佑关闭时，对应职业武器增加20%伤害和10%暴击率
 				'''
 
 			Styx:
@@ -320,7 +321,7 @@ Mods: {
 			Anticoagulation: '''生命流失，受伤时鲜血四溅，敌怪会吸收你溅出的鲜血并变得更强'''
 			Antisocial: '''你没有朋友，也无法造成召唤伤害'''
 			Atrophied: '''你的肌肉正在退化'''
-			Berserked: '''增加10%伤害和攻击速度，但你控几不住你记己'''
+			Berserked: '''攻势增强，防御减少，但你控几不住你记己'''
 			BloodDrinker: '''增加30%伤害'''
 			Bloodthirsty: '''极大提高刷怪速率'''
 			BrainOfConfusionDebuff: '''造成的伤害降低30%'''
@@ -1031,6 +1032,7 @@ Mods: {
 			MutantsCurse: "{$Mods.FargowiltasSouls.NPCName.MutantBoss}{$Mods.FargowiltasSouls.Message.HasAwoken}"
 			
 			AbominationnVoodooDoll: "突变体的兄弟死了，突变体被激怒了！"
+			AbominationnVoodooDollFail: "娃娃传送回了你的手中。也许不应该在地下使用它..."
 			
 			SigilOfChampions: {
 				Timber: 林叶沙沙，环绕四周……
@@ -1846,7 +1848,7 @@ Mods: {
 
 			OOASet: 当你使用其他职业的武器攻击时，抵消部分召唤伤害降低惩罚
 			MiningHelmet: 提高不死矿工的刷新率
-			MoonsDrops: Boss和迷你Boss在15波前不会掉落物品
+			MoonsDrops: Boss和迷你Boss在{0}波前不会掉落物品
 			MoonsWaves: 死亡会降低当前波数
 
 			WhipSpeed: 不接受近战攻速加成
@@ -2017,7 +2019,7 @@ Mods: {
 			
 			KamikazeSquirrelStaff: 神风松鼠杖
 			MountedAcornGun: 安装好的橡实枪
-			SnowballStaff: 雪球法杖
+			SnowballStaff: 雪球效应
 			TheLightningRod: 避雷针
 			TreeSword: 树剑
 
@@ -3337,6 +3339,7 @@ Mods: {
 			'''
 			MutantsCurse:
 			'''
+			必须在地表使用
 			“至少不需要用娃娃了”
 			'''
 			SigilOfChampions:
@@ -3349,6 +3352,10 @@ Mods: {
 			SquirrelCoatofArms:
 			'''
 			召唤无法平息的松鼠之怒！
+			'''
+			AbomsCurse:
+			'''
+			必须在地表使用
 			'''
 
 			// == Misc ==
