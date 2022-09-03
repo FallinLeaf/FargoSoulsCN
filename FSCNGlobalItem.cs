@@ -24,7 +24,8 @@ namespace FargoSoulsCN
             {
                 ReplaceForceTooltip(4, $"[i:{ModContent.ItemType<CobaltEnchant>()}] 额外获得一次爆炸二段跳，受击时你会剧烈爆炸（译者注：大地之力只有受击爆炸效果，没有爆炸跳跃效果）");
                 ReplaceForceTooltip(5, $"[i:{ModContent.ItemType<MythrilEnchant>()}] 在一段时间不攻击后开始攻击会短暂地提高武器使用速度");
-                ReplaceForceTooltip(10, $"[i:{ModContent.ItemType<AdamantiteEnchant>()}] 你发射的所有弹幕都会分裂成两个，造成50%伤害且伤害频率翻倍，弹幕增加与其一半伤害相等的护甲穿透");
+                tooltips.Insert(6, new TooltipLine(Mod, "tooltip_zh", $"[i:{ModContent.ItemType<MythrilEnchant>()}] 使用速度加成会在攻击5秒后消失，并在5秒不攻击后恢复"));
+                ReplaceForceTooltip(11, $"[i:{ModContent.ItemType<AdamantiteEnchant>()}] 你发射的所有弹幕都会分裂成两个，造成50%伤害且伤害频率翻倍，弹幕增加与其一半伤害相等的护甲穿透");
             }
             else if (item.type == ItemType<LifeForce>())
             {
@@ -64,6 +65,7 @@ namespace FargoSoulsCN
                 ReplaceForceTooltip(7, $"[i:{ModContent.ItemType<TinEnchant>()}] 被击中后会降低暴击率");
                 ReplaceForceTooltip(8, $"[i:{ModContent.ItemType<IronEnchant>()}] 右键进行盾牌格挡");
                 tooltips.Insert(9, new TooltipLine(Mod, "tooltip_zh", $"[i:{ModContent.ItemType<IronEnchant>()}] 在受伤前格挡以格挡此次攻击"));
+                tooltips.Insert(16, new TooltipLine(Mod, "tooltip_zh", $"[i:{ModContent.ItemType<ObsidianEnchant>()}] 鞭子的范围增加50%"));
             }
             else if (item.type == ItemType<WillForce>())
             {
