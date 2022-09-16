@@ -1,5 +1,5 @@
 displayName = Fargo魂石汉化补丁
-author = FallingLeaf落叶
+author = FallingLeaf落叶, Furgo_
 version = 0.1
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, lib\*, .git\*, *.sln
-modReferences = FargowiltasSouls@1.4.0.4
+modReferences = FargowiltasSouls@1.4.0.6
