@@ -17,24 +17,34 @@ using Terraria.DataStructures;
 using Terraria.ModLoader;
 using Terraria.Localization;
 using Microsoft.Xna.Framework.Input;
+using FargowiltasSouls.EternityMode.Content.Enemy.Jungle;
 
 namespace FargoSoulsCN
 {
     public class DeathMessageTranslate : ModSystem
     {
-        //public List<ILHook> ilHooks;
+        public List<ILHook> ilHooks;
         public List<Hook> hooks;
         public override void Load()
         {
             hooks = new List<Hook>();
+            ilHooks = new List<ILHook>();
             MonoModHooks.RequestNativeAccess();
             hooks.Add(new Hook(typeof(FargoSoulsPlayer).GetMethod("PreKill"), PreKill));
-
-            /*foreach (ILHook iLHook in ilHooks)
+            ilHooks.Add(new ILHook(typeof(Derpling).GetMethod("AI"), new ILContext.Manipulator(il =>
+            {
+                var c = new ILCursor(il);
+                if (!c.TryGotoNext(i => i.MatchLdstr(" was sucked dry.")))
+                    return;
+                c.Index++;
+                c.Emit(OpCodes.Pop);
+                c.Emit(OpCodes.Ldstr, "被吸干了。");
+            })));
+            foreach (ILHook iLHook in ilHooks)
             {
                 if (iLHook is not null)
                     iLHook.Apply();
-            }*/
+            }
             foreach (Hook hook in hooks)
             {
                 if (hook is not null)
@@ -141,12 +151,12 @@ namespace FargoSoulsCN
         }
         public override void Unload()
         {
-            /*foreach (ILHook iLHook in ilHooks)
+            foreach (ILHook iLHook in ilHooks)
             {
                 if (iLHook is not null)
                     iLHook.Dispose();
             }
-            ilHooks = null;*/
+            ilHooks = null;
             foreach (Hook hook in hooks)
             {
                 if (hook is not null)
