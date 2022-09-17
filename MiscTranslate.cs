@@ -259,7 +259,7 @@ namespace FargoSoulsCN
         public override void Unload()
         {
             On.Terraria.Main.DrawInterface_33_MouseText -= Main_DrawInterface_33_MouseText;
-            On.Terraria.UI.Chat.ChatManager.ParseMessage += ChatManager_ParseMessage;
+            On.Terraria.UI.Chat.ChatManager.ParseMessage -= ChatManager_ParseMessage;
             foreach (ILHook iLHook in ilHooks)
             {
                 if (iLHook is not null)
