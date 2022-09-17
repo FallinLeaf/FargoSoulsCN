@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using FargowiltasSouls.Buffs;
 
 namespace FargoSoulsCN
 {
@@ -26,6 +27,14 @@ namespace FargoSoulsCN
                 case BuffID.ManaSickness:
                     tip = tip.Replace("Eternity Mode: Halved attack speed", "永恒模式：攻击速度减半");
                     break;
+                default:
+                    if (type == ModContent.BuffType<Coldheart>())
+                    {
+                        tip = "减少" + tip.Replace(" less damage reduction", "伤害减免");
+                        break;
+                    }
+                    break;
+
             }
         }
     }

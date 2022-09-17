@@ -4,7 +4,6 @@ using Terraria.ModLoader;
 using FargowiltasSouls.Items.Accessories.Forces;
 using FargowiltasSouls.Items.Accessories.Enchantments;
 using static Terraria.ModLoader.ModContent;
-using static FargoSoulsCN.Utils;
 
 namespace FargoSoulsCN
 {
