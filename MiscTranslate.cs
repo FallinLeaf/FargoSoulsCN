@@ -57,7 +57,7 @@ namespace FargoSoulsCN
             ILTranslate(typeof(Derpling), "AI", " was sucked dry.", "被吸干了。", new Type[] { typeof(NPC) });
             ILTranslate(typeof(UISearchBar), "DrawChildren", "Search...", "搜索……", new Type[] { typeof(SpriteBatch) }, BindingFlags.NonPublic | BindingFlags.Instance);
             #region Betsy
-            void BetsyTranslate(string en, string zh)
+            void BetsyTranslate(string en, string zh, bool twice = false)
             {
                 ilHooks.Add(new ILHook(typeof(Betsy).GetMethod("PreAI"), new ILContext.Manipulator(il =>
                 {
@@ -67,9 +67,18 @@ namespace FargoSoulsCN
                     c.Index++;
                     c.Emit(OpCodes.Pop);
                     c.Emit(OpCodes.Ldstr, zh);
+                    if (twice)
+                    {
+                        if (!c.TryGotoNext(i => i.MatchLdstr(en)))
+                            return;
+                        c.Index++;
+                        c.Emit(OpCodes.Pop);
+                        c.Emit(OpCodes.Ldstr, zh);
+                    }
                 })));
             }
             BetsyTranslate("CRINGE", "你怕了？");
+            BetsyTranslate("<User ", "<玩家", true);
             #endregion
             foreach (MethodInfo info in typeof(Fused).GetMethods())
             {
